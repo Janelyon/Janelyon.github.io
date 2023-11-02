@@ -1,54 +1,106 @@
-div ul {    
-    list-style-type: none;
-    margin-left: 80px;
-    padding: 0;
+body {
+    background-color: whitesmoke;
+    font-size: 0.9rem;
+    font-family: verdana;
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbutton:hover {
+    color: red;
+    cursor: pointer;
+}
+ul {
+    font-size: 0.8rem;
+    list-style-type: circle;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-right: 20px;
 }
 li {
-    display: inline-block;
-}
-button a {
-    text-decoration: none;
-}
-.split {
-    height: 100%;
-    position: fixed;
-    z-index: 1, 12;
-    top: 0;
-    overflow-x: hidden;
-}
-.left {
-    left: 0;
-    width: 15%;
-}
-.right {
-    right: 0;
-    width: 85%;
-}
-.image {
-    position: fixed;
-    display: block;
-    left: 15%;
-    width: 20%
-}
-.bodytext {
-    position: fixed;
-    display: block;
-    left: 35%;
-    right: 0;
-    width: 80%;
-    z-index: 1, 12;
-    text-decoration: none;
+    display: list-item;
     text-align: left;
 }
+li a {
+    color: rgb(159, 86, 83);
+    text-decoration: none;
+}
+li a:hover {
+    color: rgb(255, 0, 0);
+}
+.navbutton {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: audiowide;
+    background-color: rgba(255, 255, 255, 0.176);
+    border-radius: 20px;
+    color: brown;
+    border-width: 0px;
+    margin: 1px;
+}
+.left {
+    float: left;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+h1 {
+    color: brown;
+    font-family: audiowide;
+    font-size: 1.2em;
+}
+
 .red_dragon {
-    margin-bottom: 0ch;
-    width: 80%;
-    height: 100%;
+   float: left;
+   padding-right: 15px;
+   padding-bottom: 15px;
 }
-.div4 {
-    font-size: 100%;
+@media screen and (max-width: 500px) {
+    .left {
+       width: 100%;
+       height: auto;
+       position: relative;
 }
-#maailma {
-    display: block;
-    position: relative;
+    li {
+        display: flex;
+        float: left;
+        flex-wrap: wrap;
+        padding-left: 2%;
 }
+    .linkki1 {position: fixed;
+        left: 15px;
+        padding-bottom: 10px;
+}
+    .linkki2 {
+        position: fixed;
+        left: 80px;}
+    .linkki3 {
+        position: fixed;
+        left: 145px;
+    }
+    article {
+        position: relative;
+        height: auto;
+        width: 100%;}
+
+}
+#maat {
+    border-collapse: collapse;
+    width: 100%;
+}
+#maat tr:hover {background-color: #DDD;}
+#maat th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: brown;
+    color: whitesmoke;
+}
+#maat td, #maat th{
+    border: 1px solid rgb(174, 174, 174);
+    text-align: center;
+}
+#maat tr:nth-child(even) {background-color: rgb(180, 178, 178);}
+#maat tr:nth-child(even):hover {background-color: #DDD;}
